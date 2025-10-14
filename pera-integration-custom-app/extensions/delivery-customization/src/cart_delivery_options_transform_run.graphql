@@ -1,0 +1,20 @@
+query CartDeliveryOptionsTransformRunInput {
+    cart {
+    lines {
+      quantity
+      merchandise {
+        ... on ProductVariant {
+          product {
+            title
+          }
+        }
+      }
+    }
+    deliveryGroups {
+      deliveryOptions {
+        title
+        handle
+      }
+    }
+  }
+}
