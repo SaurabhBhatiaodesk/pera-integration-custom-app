@@ -38,7 +38,20 @@
 
   .cnc-search-row{display:flex;gap:0;margin:10px 0 14px}
   .cnc-search-input{flex:1;height:46px;border:1px solid #E1E1E1;border-right:none;padding:0 14px;font-size:15px;border-radius:8px 0 0 8px}
-  .cnc-search-btn{min-width:52px;border:none;background:#01AF67;color:#fff;padding:0 14px;border-radius:0 8px 8px 0;cursor:pointer;height:auto}
+  .cnc-search-btn {
+      display: grid;
+      place-items: center;
+      border: none;
+      background: var(--cnc-green);
+      color: #fff;
+      border-radius: 6px;
+      padding: 11px;
+      cursor: pointer;
+      width: auto;
+  }
+  .cnc-search input{
+    padding:0 20px;
+  }
   .cnc-search-btn:hover{background:#0b9a5c}
 
   .cnc-location-item{padding:12px 0;border-bottom:1px solid #eef2f6}
