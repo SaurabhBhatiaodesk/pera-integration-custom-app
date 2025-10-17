@@ -5,9 +5,6 @@ name = "pera-integration-custom-app"
 application_url = "https://pera-integration-custom-app-8fec38b7e201.herokuapp.com"
 embedded = true
 
-[build]
-automatically_update_urls_on_dev = true
-
 [webhooks]
 api_version = "2026-01"
 
@@ -16,4 +13,9 @@ api_version = "2026-01"
 scopes = "read_customers,read_inventory,read_locales,read_locations,read_orders,read_product_listings,read_products,read_publications,read_script_tags,write_content,write_delivery_customizations,write_inventory,write_locations,write_products,write_publications,write_script_tags,write_shipping"
 
 [auth]
-redirect_urls = [ "https://pera-integration-custom-app-8fec38b7e201.herokuapp.com/api/auth" ]
+redirect_urls = [
+  "https://pera-integration-custom-app-8fec38b7e201.herokuapp.com/api/auth"
+]
+
+[build]
+automatically_update_urls_on_dev = false
