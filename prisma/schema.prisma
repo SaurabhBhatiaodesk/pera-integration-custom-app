@@ -16,8 +16,8 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = env("HEROKU_POSTGRESQL_PINK_URL")
-  shadowDatabaseUrl = env("DATABASE_URL")
+  url      = env("DATABASE_URL")
+  shadowDatabaseUrl = env("HEROKU_POSTGRESQL_IVORY_URL")
 }
 
 
